@@ -68,4 +68,4 @@ window.onload = function() {
     // convert on page load
     convertTextAreaToMarkdown();
 
-};
+};  
