@@ -29,12 +29,14 @@ window.onload = function() {
     }, 1000);
 
     pad.addEventListener('input', convertTextAreaToMarkdown);
-    var path = document.location.pathname.slice(1,);
-
-    console.log("used url", path);
-    
-    sharejs.open(path, 'text', function(error, doc) {
-        doc.attach_textarea(pad);
-        convertTextAreaToMarkdown();
-    });
+     // ignore if on home page
+    if(document.location.pathname.length > 1){
+        // implement share js
+        var documentName = document.location.pathname.substring(1);
+        sharejs.open(documentName, 'text', function(error, doc) {
+            doc.attach_textarea(pad);
+            convertTextAreaToMarkdown();
+        });        
+    }
+    convertTextAreaToMarkdown();
 };
