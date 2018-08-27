@@ -1,0 +1,19 @@
+{
+  "name": "real_time_markdown_viewer",
+  "version": "1.0.0",
+  "description": "Realtime Markdown Viewer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Magho/Real-Time-Markdown-Viewer-"
+  },
+  "author": "Magho",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}
